@@ -16,8 +16,8 @@ ________________________________________________________________________________
 If it's not reachable you have to check for python module inside a container :
 To install a python module 
 
-ansible all -m raw -a "yum install python2 -y" -i docker.py -c docker
-or
+ansible all -m raw -a "yum install python2 -y" -i docker.py -c docker<br>
+or<br>
 ansible <container_name> -m raw -a "yum install python2 -y" -i docker.py -c docker
 
 
