@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  tasks:
+   - name: pull the container
+     docker_image:
+        name: centos
+        state: present
+   - name: start container
+     docker_container:
+        name: batman
+        image: centos
+        state: started
+        command: bash
+        tty: true
+        detach: true

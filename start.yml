@@ -1,0 +1,11 @@
+---
+- hosts: nodes
+  tasks:
+   - name: start container
+     docker_container:
+        name: 
+        image: fedora
+        state: started
+        command: bash
+        tty: true
+        detach: true

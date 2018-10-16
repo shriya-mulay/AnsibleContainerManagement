@@ -1,0 +1,2 @@
+[container]
+cent ansible_connection=docker ansible_docker_extra_args="-H tcp://10.74.252.133:2345"

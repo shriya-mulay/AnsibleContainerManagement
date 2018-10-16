@@ -1,0 +1,12 @@
+---
+- hosts: trusting_wright
+  vars: 
+    pack: httpd
+  connection: docker
+  tasks:
+  - name: install
+    register: noone
+    dnf:
+     name: "{{ pack }}"
+     state: latest
+
