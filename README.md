@@ -2,8 +2,8 @@
 
 Prerequisites:
 
-Ansible >= 2.7
-python 2
+Ansible >= 2.7 <br>
+python 2 <br>
 docker-py python module
 _________________________________________________________________________________________________________________________
 Install docker-py :
